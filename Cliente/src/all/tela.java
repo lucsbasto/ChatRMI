@@ -129,6 +129,11 @@ public class tela extends javax.swing.JFrame {
         });
 
         btnSair.setText("Sair");
+        btnSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSairActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -194,6 +199,10 @@ public class tela extends javax.swing.JFrame {
         conectar();
     }//GEN-LAST:event_btnConnectActionPerformed
 
+    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
+        desconectar();
+    }//GEN-LAST:event_btnSairActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -243,6 +252,9 @@ public class tela extends javax.swing.JFrame {
         }
     }
     
+    public void desconectar(){
+        System.exit(0);
+    }
     public void send() throws RemoteException{
         Mensagem msg;
         String recv = listOnlines.getSelectedValue();

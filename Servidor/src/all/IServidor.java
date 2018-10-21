@@ -19,4 +19,5 @@ public interface IServidor extends Remote{
     public boolean Atualizar() throws java.rmi.RemoteException;
     public Mensagem atualiza() throws java.rmi.RemoteException;
     public ArrayList getMsgs() throws java.rmi.RemoteException;
+    public void disconnect() throws java.rmi.RemoteException;
 }

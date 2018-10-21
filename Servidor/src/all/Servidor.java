@@ -75,34 +75,11 @@ public class Servidor extends UnicastRemoteObject implements IServidor {
         }
         return true;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    @Override
+    public void disconnect(){
+        
+    } 
+     
     
     
      public static void main(String[] args) {
